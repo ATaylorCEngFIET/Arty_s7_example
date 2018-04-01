@@ -1,0 +1,48 @@
+09:37:15 **** Incremental Build of configuration Debug for project s7 ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../s7_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:290:1: warning: multi-line comment [-Wcomment]
+ //            "Magnetometer Gauss values   X:%.2f Gauss, Y:%.2f Gauss, Z:%.2f Gauss \
+ ^
+../src/main.cc: In function 'void TimerCounterHandler(void*, u8)':
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+            "South-West", "West", "North-West"};
+                                              ^
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/main.cc:228:46: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+../src/main.cc:305:14: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        str = "Clockwise";
+              ^~~~~~~~~~~
+../src/main.cc:307:13: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+       str = "Counter-Clockwise";
+             ^~~~~~~~~~~~~~~~~~~
+../src/main.cc:309:14: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+        str = "Marginal";
+              ^~~~~~~~~~
+../src/main.cc: In function 'int SetupInterruptSystem()':
+../src/main.cc:355:8: warning: unused variable 'Options' [-Wunused-variable]
+    u16 Options;
+        ^~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: s7.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../s7_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "s7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: s7.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size s7.elf  |tee "s7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 171084	   1724	 788584	 961392	  eab70	s7.elf
+'Finished building: s7.elf.size'
+' '
+
+09:37:17 Build Finished (took 2s.157ms)
+

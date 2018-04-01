@@ -1,0 +1,21 @@
+
+*** Running vivado
+    with args -log design_1_PmodGPS_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PmodGPS_0_0.tcl
+
+WARNING: Ignoring invalid XILINX_PATH location C:\Xilinx\Vivado\2017.3\patches\AR70065\vivado.
+Resolution: An invalid XILINX_PATH location has been detected. To resolve this issue:
+
+1. Verify the value of XILINX_PATH is accurate by viewing the value the variable via 'set XILINX_PATH' for Windows or 'echo $XILINX_PATH' for Linux, and update it as needed.
+
+2. To unset the variable using on Windows using 'set XILINX_PATH=' or remove it from Advanced System Settings\Environment Variables. On Linux 'unsetenv XILINX_PATH'
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+WARNING: [Common 17-1271] The MYVIVADO environment variable specifies an invalid location 'C:\Xilinx\Vivado\2017.3\patches\AR70065\vivado'
+source design_1_PmodGPS_0_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_PmodGPS_0_0, cache-ID = 14d1a8e48e4d5bf0.
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 30 13:41:59 2018...

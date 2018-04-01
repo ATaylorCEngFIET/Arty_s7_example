@@ -1,0 +1,2009 @@
+
+*** Running vivado
+    with args -log design_1_PmodHYGRO_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PmodHYGRO_0_0.tcl
+
+WARNING: Ignoring invalid XILINX_PATH location C:\Xilinx\Vivado\2017.3\patches\AR70065\vivado.
+Resolution: An invalid XILINX_PATH location has been detected. To resolve this issue:
+
+1. Verify the value of XILINX_PATH is accurate by viewing the value the variable via 'set XILINX_PATH' for Windows or 'echo $XILINX_PATH' for Linux, and update it as needed.
+
+2. To unset the variable using on Windows using 'set XILINX_PATH=' or remove it from Advanced System Settings\Environment Variables. On Linux 'unsetenv XILINX_PATH'
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+WARNING: [Common 17-1271] The MYVIVADO environment variable specifies an invalid location 'C:\Xilinx\Vivado\2017.3\patches\AR70065\vivado'
+source design_1_PmodHYGRO_0_0.tcl -notrace
+Command: synth_design -top design_1_PmodHYGRO_0_0 -part xc7s50csga324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8360 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 422.754 ; gain = 104.727
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2048] function gpo_bit_used does not always return a value [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:1139]
+INFO: [Synth 8-638] synthesizing module 'design_1_PmodHYGRO_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/synth/design_1_PmodHYGRO_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'PmodHYGRO' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:12]
+INFO: [Synth 8-638] synthesizing module 'PmodHYGRO_axi_timer_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/synth/PmodHYGRO_axi_timer_0_0.vhd:90]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 1 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'axi_timer' declared at 'c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2082' bound to instance 'U0' of component 'axi_timer' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/synth/PmodHYGRO_axi_timer_0_0.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'axi_timer' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 1 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2106]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2107]
+INFO: [Synth 8-638] synthesizing module 'tc_core' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 1 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_AWIDTH bound to: 5 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+	Parameter C_DW bound to: 32 - type: integer 
+	Parameter C_NB bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26611' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (2#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'count_module' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+	Parameter C_NUM_BITS bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (3#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'count_module' (4#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-638] synthesizing module 'timer_control' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'READ_DONE0_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1070]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'READ_DONE1_I' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1080]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'timer_control' (6#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'PWM_FF_I' to cell 'FDRS' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1904]
+INFO: [Synth 8-256] done synthesizing module 'tc_core' (7#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000011111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 5 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (9#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (10#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (11#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timer' (12#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+INFO: [Synth 8-256] done synthesizing module 'PmodHYGRO_axi_timer_0_0' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/synth/PmodHYGRO_axi_timer_0_0.vhd:90]
+WARNING: [Synth 8-689] width (9) of port connection 's_axi_araddr' does not match port width (5) of module 'PmodHYGRO_axi_timer_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:290]
+WARNING: [Synth 8-689] width (9) of port connection 's_axi_awaddr' does not match port width (5) of module 'PmodHYGRO_axi_timer_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:294]
+WARNING: [Synth 8-350] instance 'axi_timer_0' of module 'PmodHYGRO_axi_timer_0_0' requires 26 connections, but only 19 given [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:288]
+INFO: [Synth 8-638] synthesizing module 'PmodHYGRO_axi_iic_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/synth/PmodHYGRO_axi_iic_0_0.vhd:91]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IIC_FREQ bound to: 100000 - type: integer 
+	Parameter C_TEN_BIT_ADR bound to: 0 - type: integer 
+	Parameter C_GPO_WIDTH bound to: 2 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_LEVEL bound to: 1 - type: integer 
+	Parameter C_SMBUS_PMBUS_HOST bound to: 0 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-3491] module 'axi_iic' declared at 'c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:6799' bound to instance 'U0' of component 'axi_iic' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/synth/PmodHYGRO_axi_iic_0_0.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'axi_iic' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:6870]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IIC_FREQ bound to: 100000 - type: integer 
+	Parameter C_TEN_BIT_ADR bound to: 0 - type: integer 
+	Parameter C_GPO_WIDTH bound to: 2 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_LEVEL bound to: 1 - type: integer 
+	Parameter C_SMBUS_PMBUS_HOST bound to: 0 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-638] synthesizing module 'iic' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:6187]
+	Parameter C_NUM_IIC_REGS bound to: 18 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_IIC_FREQ bound to: 100000 - type: integer 
+	Parameter C_TEN_BIT_ADR bound to: 0 - type: integer 
+	Parameter C_GPO_WIDTH bound to: 2 - type: integer 
+	Parameter C_SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_SDA_LEVEL bound to: 1 - type: integer 
+	Parameter C_SMBUS_PMBUS_HOST bound to: 0 - type: integer 
+	Parameter C_TX_FIFO_EXIST bound to: 1 - type: bool 
+	Parameter C_RC_FIFO_EXIST bound to: 1 - type: bool 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_DEFAULT_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-638] synthesizing module 'axi_ipif_ssp1' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:5661]
+	Parameter C_NUM_IIC_REGS bound to: 18 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100001100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000010010 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100001100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000010010 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100001100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000010010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized21' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized21' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized22' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized22' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized23' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized23' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized24' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 7 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b001000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized24' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized25' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b100000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized25' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized26' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized26' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized27' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized27' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized28' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized28' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized29' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized29' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized30' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized30' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized31' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized31' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized32' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized32' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized33' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b00111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized33' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized34' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized34' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized35' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized35' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized36' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized36' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized37' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized37' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized38' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized38' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized39' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized39' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized40' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized40' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized41' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b01111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized41' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized42' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b10000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized42' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized43' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 5 - type: integer 
+	Parameter C_AW bound to: 5 - type: integer 
+	Parameter C_BAR bound to: 5'b10001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized43' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+	Parameter C_NUM_CE bound to: 16 - type: integer 
+	Parameter C_NUM_IPIF_IRPT_SRC bound to: 1 - type: integer 
+	Parameter C_IP_INTR_MODE_ARRAY bound to: 256'b0000000000000000000000000000001100000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000011 
+	Parameter C_INCLUDE_DEV_PENCODER bound to: 0 - type: bool 
+	Parameter C_INCLUDE_DEV_ISC bound to: 0 - type: bool 
+	Parameter C_IPIF_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (14#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:141]
+	Parameter C_SIPIF_DWIDTH bound to: 32 - type: integer 
+	Parameter C_RESET_WIDTH bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:272]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:272]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:272]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:272]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:295]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (15#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'axi_ipif_ssp1' (16#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:5661]
+INFO: [Synth 8-638] synthesizing module 'reg_interface' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:1677]
+	Parameter C_SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_IIC_FREQ bound to: 100000 - type: integer 
+	Parameter C_SMBUS_PMBUS_HOST bound to: 0 - type: integer 
+	Parameter C_TX_FIFO_EXIST bound to: 1 - type: bool 
+	Parameter C_TX_FIFO_BITS bound to: 4 - type: integer 
+	Parameter C_RC_FIFO_EXIST bound to: 1 - type: bool 
+	Parameter C_RC_FIFO_BITS bound to: 4 - type: integer 
+	Parameter C_TEN_BIT_ADR bound to: 0 - type: integer 
+	Parameter C_GPO_WIDTH bound to: 2 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_SIZE bound to: 10 - type: integer 
+	Parameter C_NUM_IIC_REGS bound to: 18 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: 8'b00000000 
+WARNING: [Synth 8-6014] Unused sequential element ro_a_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:2273]
+INFO: [Synth 8-256] done synthesizing module 'reg_interface' (17#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:1677]
+INFO: [Synth 8-638] synthesizing module 'filter' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:4985]
+	Parameter SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter SDA_INERTIAL_DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'debounce' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:1307]
+	Parameter C_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_DEFAULT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (18#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:1307]
+INFO: [Synth 8-256] done synthesizing module 'filter' (19#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:4985]
+INFO: [Synth 8-638] synthesizing module 'iic_control' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:2908]
+	Parameter C_SCL_INERTIAL_DELAY bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_IIC_FREQ bound to: 100000 - type: integer 
+	Parameter C_SIZE bound to: 10 - type: integer 
+	Parameter C_TEN_BIT_ADR bound to: 0 - type: integer 
+	Parameter C_SDA_LEVEL bound to: 1 - type: integer 
+	Parameter C_SMBUS_PMBUS_HOST bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:740]
+	Parameter C_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (20#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:740]
+INFO: [Synth 8-638] synthesizing module 'shift8' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:897]
+INFO: [Synth 8-256] done synthesizing module 'shift8' (21#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:897]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:740]
+	Parameter C_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n__parameterized0' (21#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:740]
+WARNING: [Synth 8-6014] Unused sequential element sda_cout_reg_d1_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:3658]
+WARNING: [Synth 8-6014] Unused sequential element gen_stop_and_scl_hi_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:3874]
+INFO: [Synth 8-256] done synthesizing module 'iic_control' (22#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:2908]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:449]
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_XON bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'FDR' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3951' bound to instance 'Data_Exists_DFF' of component 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:543]
+INFO: [Synth 8-638] synthesizing module 'FDR' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3951]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDR' (23#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3951]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-638] synthesizing module 'MUXCY_L' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY_L' (24#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (25#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (26#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (27#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50705' bound to instance 'SRL16E_I' of component 'SRL16E' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (28#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'dynamic_master' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:5204]
+WARNING: [Synth 8-6014] Unused sequential element dynamic_MSMS_d_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:5265]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_master' (29#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:5204]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:449]
+	Parameter C_DATA_BITS bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_XON bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'FDR' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3951' bound to instance 'Data_Exists_DFF' of component 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:543]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:26636' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52717' bound to instance 'XORCY_I' of component 'XORCY' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964' bound to instance 'FDRE_I' of component 'FDRE' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:573]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO__parameterized0' (29#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:449]
+INFO: [Synth 8-256] done synthesizing module 'iic' (30#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:6187]
+INFO: [Synth 8-256] done synthesizing module 'axi_iic' (31#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:6870]
+INFO: [Synth 8-256] done synthesizing module 'PmodHYGRO_axi_iic_0_0' (32#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/synth/PmodHYGRO_axi_iic_0_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'PmodHYGRO_pmod_bridge_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/synth/PmodHYGRO_pmod_bridge_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'pmod_concat' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:12]
+	Parameter Top_Row_Interface bound to: I2C - type: string 
+	Parameter Bottom_Row_Interface bound to: Disabled - type: string 
+WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:84]
+WARNING: [Synth 8-3848] Net in_top_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:87]
+WARNING: [Synth 8-3848] Net in_bottom_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:94]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:100]
+WARNING: [Synth 8-3848] Net in0_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:104]
+WARNING: [Synth 8-3848] Net in1_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:105]
+INFO: [Synth 8-256] done synthesizing module 'pmod_concat' (33#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-256] done synthesizing module 'PmodHYGRO_pmod_bridge_0_0' (34#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/synth/PmodHYGRO_pmod_bridge_0_0.v:56]
+WARNING: [Synth 8-350] instance 'pmod_bridge_0' of module 'PmodHYGRO_pmod_bridge_0_0' requires 33 connections, but only 32 given [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:337]
+INFO: [Synth 8-638] synthesizing module 'PmodHYGRO_xlconstant_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_xlconstant_0_0/synth/PmodHYGRO_xlconstant_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconstant_v1_1_3_xlconstant' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconstant_v1_1_3_xlconstant' (35#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PmodHYGRO_xlconstant_0_0' (36#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_xlconstant_0_0/synth/PmodHYGRO_xlconstant_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'PmodHYGRO' (37#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:12]
+INFO: [Synth 8-256] done synthesizing module 'design_1_PmodHYGRO_0_0' (38#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/synth/design_1_PmodHYGRO_0_0.v:56]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_T
+WARNING: [Synth 8-3331] design dynamic_master has unconnected port Cr[0]
+WARNING: [Synth 8-3331] design dynamic_master has unconnected port Cr[1]
+WARNING: [Synth 8-3331] design dynamic_master has unconnected port Cr[2]
+WARNING: [Synth 8-3331] design dynamic_master has unconnected port Cr[4]
+WARNING: [Synth 8-3331] design dynamic_master has unconnected port Cr[6]
+WARNING: [Synth 8-3331] design dynamic_master has unconnected port Cr[7]
+WARNING: [Synth 8-3331] design iic_control has unconnected port Adr[0]
+WARNING: [Synth 8-3331] design iic_control has unconnected port Ten_adr[7]
+WARNING: [Synth 8-3331] design iic_control has unconnected port Ten_adr[6]
+WARNING: [Synth 8-3331] design iic_control has unconnected port Ten_adr[5]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[31]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[30]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[29]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[28]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[27]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[26]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[25]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[24]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[23]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[22]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[21]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[20]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[19]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[18]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[17]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[16]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[15]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[14]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[13]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[12]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[11]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[10]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[9]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[8]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[7]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[6]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[5]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[4]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[3]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[2]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
+WARNING: [Synth 8-3331] design debounce has unconnected port Rst
+WARNING: [Synth 8-3331] design debounce has unconnected port Stable
+WARNING: [Synth 8-3331] design reg_interface has unconnected port Bus2IIC_Addr[0]
+WARNING: [Synth 8-3331] design reg_interface has unconnected port Bus2IIC_Data[0]
+WARNING: [Synth 8-3331] design reg_interface has unconnected port Bus2IIC_Data[1]
+WARNING: [Synth 8-3331] design reg_interface has unconnected port Bus2IIC_Data[2]
+WARNING: [Synth 8-3331] design reg_interface has unconnected port Bus2IIC_Data[3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 496.348 ; gain = 178.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin axi_timer_0:capturetrig0 to constant 0 [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-3295] tying undriven pin axi_timer_0:capturetrig1 to constant 0 [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:288]
+WARNING: [Synth 8-3295] tying undriven pin axi_timer_0:freeze to constant 0 [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/49df/src/PmodHYGRO.v:288]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 496.348 ; gain = 178.320
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/PmodHYGRO_axi_iic_0_0_board.xdc] for cell 'inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/PmodHYGRO_axi_iic_0_0_board.xdc] for cell 'inst/axi_iic_0/U0'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/PmodHYGRO_axi_timer_0_0.xdc] for cell 'inst/axi_timer_0/U0'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/PmodHYGRO_axi_timer_0_0.xdc] for cell 'inst/axi_timer_0/U0'
+WARNING: [Designutils 20-1758] instance inst wraps a black box. Constraint reading is skipped for elaborated designs in this case. Skipping constraint file 'c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/PmodHYGRO_pmod_bridge_0_0_board.xdc'.
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc] for cell 'inst'
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc:3]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc:10]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc:11]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc:12]
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_PmodHYGRO_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_PmodHYGRO_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  FDR => FDRE: 33 instances
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 30 instances
+  MUXCY_L => MUXCY: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 818.016 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 818.016 ; gain = 499.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 818.016 ; gain = 499.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/axi_iic_0/U0. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for inst/axi_timer_0/U0. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/dont_touch.xdc, line 33).
+Applied set_property DONT_TOUCH = true for inst/pmod_bridge_0/inst. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for inst/axi_iic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/pmod_bridge_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xlconstant_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 818.016 ; gain = 499.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:176]
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element INCLUDE_DPHASE_TIMER.dpto_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2674]
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element INCLUDE_DPHASE_TIMER.dpto_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2674]
+WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:758]
+INFO: [Synth 8-802] inferred FSM for state register 'scl_state_reg' in module 'iic_control'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iic_control'
+INFO: [Synth 8-5544] ROM "dtc_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "scl_cout" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "detect_stop_b" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scl_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AckDataState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "aas_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buffer_Empty" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buffer_Full" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element rdByteCntr_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:5381]
+INFO: [Synth 8-5544] ROM "buffer_Empty" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buffer_Full" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                scl_idle |                             0000 |                             0000
+              start_wait |                             0001 |                             0001
+                   start |                             0010 |                             0010
+              start_edge |                             0011 |                             0011
+            scl_low_edge |                             0100 |                             0100
+                 scl_low |                             0101 |                             0101
+           scl_high_edge |                             0110 |                             0110
+                scl_high |                             0111 |                             0111
+               stop_edge |                             1000 |                             1000
+               stop_wait |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'scl_state_reg' using encoding 'sequential' in module 'iic_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                          0000001 |                              000
+                  header |                          0000010 |                              001
+              ack_header |                          0000100 |                              010
+                rcv_data |                          0001000 |                              011
+                ack_data |                          0100000 |                              100
+               xmit_data |                          0010000 |                              101
+                wait_ack |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'iic_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 818.016 ; gain = 499.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 171   
++---Muxes : 
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 4     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  21 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  24 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 135   
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module count_module 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module timer_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module pselect_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 10    
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+Module pselect_f__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized26 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized27 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized28 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized29 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized30 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized31 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized33 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized34 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized35 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized36 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized37 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized38 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized39 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized40 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized41 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized42 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized43 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 39    
+Module slave_attachment__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+Module interrupt_control 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+Module soft_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module axi_ipif_ssp1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module reg_interface 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module shift8 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module upcnt_n__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module iic_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 54    
++---Muxes : 
+	   3 Input      9 Bit        Muxes := 1     
+	  21 Input      7 Bit        Muxes := 1     
+	  24 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 40    
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 10    
+Module SRL_FIFO 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module dynamic_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module SRL_FIFO__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module iic 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2004]
+WARNING: [Synth 8-6014] Unused sequential element AXI4_LITE_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2674]
+WARNING: [Synth 8-6014] Unused sequential element X_IIC/X_AXI_IPIF_SSP1/X_INTERRUPT_CONTROL/intr2bus_wrack_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/interrupt_control_v3_1_vh_rfs.vhd:543]
+WARNING: [Synth 8-6014] Unused sequential element X_IIC/X_AXI_IPIF_SSP1/X_INTERRUPT_CONTROL/intr2bus_rdack_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/interrupt_control_v3_1_vh_rfs.vhd:559]
+WARNING: [Synth 8-6014] Unused sequential element X_IIC/IIC_CONTROL_I/shift_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:4665]
+WARNING: [Synth 8-6014] Unused sequential element X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2674]
+WARNING: [Synth 8-6014] Unused sequential element X_IIC/IIC_CONTROL_I/SETUP_CNT/q_int_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:758]
+WARNING: [Synth 8-6014] Unused sequential element X_IIC/IIC_CONTROL_I/CLKCNT/q_int_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:758]
+WARNING: [Synth 8-6014] Unused sequential element X_IIC/DYN_MASTER_I/rdByteCntr_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/hdl/axi_iic_v2_0_vh_rfs.vhd:5381]
+INFO: [Synth 8-3886] merging instance 'inst/axi_timer_0/U0/TC_CORE_I/TIMER_CONTROL_I/counter_TC_Reg_reg[1]' (FDR) to 'inst/axi_timer_0/U0/TC_CORE_I/TIMER_CONTROL_I/generateOutPre1_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_timer_0/U0/\TC_CORE_I/TIMER_CONTROL_I/generateOutPre1_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS2/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS2/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/generateOutPre1_reg) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/REG_INTERFACE_I/FIFO_GEN_DTR.dtre_i_reg' (FDR) to 'inst/axi_iic_0/U0/X_IIC/REG_INTERFACE_I/sr_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/REG_INTERFACE_I/sr_i_reg[6]' (FDR) to 'inst/axi_iic_0/U0/X_IIC/REG_INTERFACE_I/IIC2Bus_IntrEvent_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_iic_0/U0/\X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30] )
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SCL_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SCL_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SDA_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SDA_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/X_AXI_IPIF_SSP1/X_INTERRUPT_CONTROL/irpt_rdack_d1_reg) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/REG_INTERFACE_I/adr_i_reg[7]) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3886] merging instance 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[16].ce_out_i_reg[16]' (FDRE) to 'inst/axi_iic_0/U0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[1].cs_out_i_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:13 . Memory (MB): peak = 818.016 ; gain = 499.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:35 . Memory (MB): peak = 818.016 ; gain = 499.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:39 . Memory (MB): peak = 850.449 ; gain = 532.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_iic.
+INFO: [Synth 8-3332] Sequential element (X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_iic.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:40 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin axi_timer_0:capturetrig0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin axi_timer_0:capturetrig1 to constant 0
+INFO: [Synth 8-3295] tying undriven pin axi_timer_0:freeze to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    16|
+|2     |LUT1    |    12|
+|3     |LUT2    |   113|
+|4     |LUT3    |   147|
+|5     |LUT4    |   110|
+|6     |LUT5    |    83|
+|7     |LUT6    |   214|
+|8     |MUXCY   |    64|
+|9     |MUXCY_L |     9|
+|10    |MUXF7   |     2|
+|11    |SRL16E  |    18|
+|12    |XORCY   |    12|
+|13    |FDR     |    23|
+|14    |FDRE    |   469|
+|15    |FDSE    |    49|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------------------------------------------------------------+---------------------------------+------+
+|      |Instance                                                                      |Module                           |Cells |
++------+------------------------------------------------------------------------------+---------------------------------+------+
+|1     |top                                                                           |                                 |  1341|
+|2     |  inst                                                                        |PmodHYGRO                        |  1341|
+|3     |    axi_timer_0                                                               |PmodHYGRO_axi_timer_0_0          |   474|
+|4     |      U0                                                                      |axi_timer                        |   474|
+|5     |        AXI4_LITE_I                                                           |axi_lite_ipif                    |   199|
+|6     |          I_SLAVE_ATTACHMENT                                                  |slave_attachment                 |   199|
+|7     |            I_DECODER                                                         |address_decoder                  |   131|
+|8     |              \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f                        |     1|
+|9     |              \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized1        |     1|
+|10    |              \MEM_DECODE_GEN[0].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized3        |     1|
+|11    |              \MEM_DECODE_GEN[0].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized4        |     1|
+|12    |              \MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized5        |     1|
+|13    |              \MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized6        |     1|
+|14    |        TC_CORE_I                                                             |tc_core                          |   275|
+|15    |          COUNTER_0_I                                                         |count_module                     |   140|
+|16    |            COUNTER_I                                                         |counter_f                        |   108|
+|17    |          READ_MUX_I                                                          |mux_onehot_f                     |    64|
+|18    |          TIMER_CONTROL_I                                                     |timer_control                    |    70|
+|19    |            INPUT_DOUBLE_REGS                                                 |cdc_sync_5                       |     5|
+|20    |            INPUT_DOUBLE_REGS2                                                |cdc_sync_6                       |     5|
+|21    |            INPUT_DOUBLE_REGS3                                                |cdc_sync_7                       |     7|
+|22    |    axi_iic_0                                                                 |PmodHYGRO_axi_iic_0_0            |   867|
+|23    |      U0                                                                      |axi_iic                          |   867|
+|24    |        X_IIC                                                                 |iic                              |   867|
+|25    |          DYN_MASTER_I                                                        |dynamic_master                   |    33|
+|26    |          FILTER_I                                                            |filter                           |    11|
+|27    |            SCL_DEBOUNCE                                                      |debounce                         |     6|
+|28    |              INPUT_DOUBLE_REGS                                               |cdc_sync_4                       |     6|
+|29    |            SDA_DEBOUNCE                                                      |debounce_3                       |     5|
+|30    |              INPUT_DOUBLE_REGS                                               |cdc_sync                         |     5|
+|31    |          IIC_CONTROL_I                                                       |iic_control                      |   271|
+|32    |            BITCNT                                                            |upcnt_n__parameterized0          |    15|
+|33    |            CLKCNT                                                            |upcnt_n                          |    28|
+|34    |            I2CDATA_REG                                                       |shift8                           |    18|
+|35    |            I2CHEADER_REG                                                     |shift8_1                         |    15|
+|36    |            SETUP_CNT                                                         |upcnt_n_2                        |    25|
+|37    |          READ_FIFO_I                                                         |SRL_FIFO                         |    29|
+|38    |          REG_INTERFACE_I                                                     |reg_interface                    |   216|
+|39    |          WRITE_FIFO_CTRL_I                                                   |SRL_FIFO__parameterized0         |    21|
+|40    |          WRITE_FIFO_I                                                        |SRL_FIFO_0                       |    33|
+|41    |          X_AXI_IPIF_SSP1                                                     |axi_ipif_ssp1                    |   249|
+|42    |            AXI_LITE_IPIF_I                                                   |axi_lite_ipif__parameterized0    |   209|
+|43    |              I_SLAVE_ATTACHMENT                                              |slave_attachment__parameterized0 |   209|
+|44    |                I_DECODER                                                     |address_decoder__parameterized0  |   112|
+|45    |            X_INTERRUPT_CONTROL                                               |interrupt_control                |    23|
+|46    |            X_SOFT_RESET                                                      |soft_reset                       |    13|
+|47    |    pmod_bridge_0                                                             |PmodHYGRO_pmod_bridge_0_0        |     0|
+|48    |      inst                                                                    |pmod_concat                      |     0|
+|49    |    xlconstant_0                                                              |PmodHYGRO_xlconstant_0_0         |     0|
++------+------------------------------------------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 98 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:24 . Memory (MB): peak = 859.477 ; gain = 219.781
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 859.477 ; gain = 541.449
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 126 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 58 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 35 instances
+  FDR => FDRE: 23 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+455 Infos, 133 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:46 . Memory (MB): peak = 859.477 ; gain = 551.492
+INFO: [Common 17-1381] The checkpoint 'C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/design_1_PmodHYGRO_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 48 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodHYGRO_0_0_synth_1/design_1_PmodHYGRO_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_PmodHYGRO_0_0_utilization_synth.rpt -pb design_1_PmodHYGRO_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 859.477 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 30 17:21:38 2018...

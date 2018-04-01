@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar 28 21:32:41 2018
+# Process ID: 12320
+# Current directory: C:/hdl_projects/arty_s7/arty_s7.runs/design_1_dlmb_v10_0_synth_1
+# Command line: vivado.exe -log design_1_dlmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_v10_0.tcl
+# Log file: C:/hdl_projects/arty_s7/arty_s7.runs/design_1_dlmb_v10_0_synth_1/design_1_dlmb_v10_0.vds
+# Journal file: C:/hdl_projects/arty_s7/arty_s7.runs/design_1_dlmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+WARNING: [Common 17-1271] The MYVIVADO environment variable specifies an invalid location 'C:\Xilinx\Vivado\2017.3\patches\AR70065\vivado'
+source design_1_dlmb_v10_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_dlmb_v10_0, cache-ID = f93e6b597ea588a1.

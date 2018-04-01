@@ -1,0 +1,1146 @@
+
+*** Running vivado
+    with args -log design_1_PmodGPS_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PmodGPS_0_0.tcl
+
+WARNING: Ignoring invalid XILINX_PATH location C:\Xilinx\Vivado\2017.3\patches\AR70065\vivado.
+Resolution: An invalid XILINX_PATH location has been detected. To resolve this issue:
+
+1. Verify the value of XILINX_PATH is accurate by viewing the value the variable via 'set XILINX_PATH' for Windows or 'echo $XILINX_PATH' for Linux, and update it as needed.
+
+2. To unset the variable using on Windows using 'set XILINX_PATH=' or remove it from Advanced System Settings\Environment Variables. On Linux 'unsetenv XILINX_PATH'
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+WARNING: [Common 17-1271] The MYVIVADO environment variable specifies an invalid location 'C:\Xilinx\Vivado\2017.3\patches\AR70065\vivado'
+source design_1_PmodGPS_0_0.tcl -notrace
+Command: synth_design -top design_1_PmodGPS_0_0 -part xc7s50csga324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16776 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 422.813 ; gain = 105.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_PmodGPS_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/synth/design_1_PmodGPS_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'PmodGPS' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/07df/src/PmodGPS.v:13]
+INFO: [Synth 8-638] synthesizing module 'PmodGPS_axi_gpio_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/synth/PmodGPS_axi_gpio_0_0.vhd:86]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/synth/PmodGPS_axi_gpio_0_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1295]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1296]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+	Parameter C_DW bound to: 32 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:384]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:384]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-256] done synthesizing module 'PmodGPS_axi_gpio_0_0' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/synth/PmodGPS_axi_gpio_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'PmodGPS_axi_uart16550_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/synth/PmodGPS_axi_uart16550_0_0.vhd:99]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IS_A_16550 bound to: 1 - type: integer 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
+	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uart16550' declared at 'c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4601' bound to instance 'U0' of component 'axi_uart16550' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/synth/PmodGPS_axi_uart16550_0_0.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4680]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IS_A_16550 bound to: 1 - type: integer 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
+	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4620]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4621]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000011111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 13 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (8#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'xuart' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_IS_A_16550 bound to: 1 - type: bool 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: bool 
+	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: bool 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart16550' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
+	Parameter C_IS_A_16550 bound to: 1 - type: bool 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: bool 
+	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'xuart_tx_load_sm' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'xuart_tx_load_sm' (9#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'BAUD_FF' to cell 'ODDR' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3363]
+INFO: [Synth 8-638] synthesizing module 'rx16550' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1760]
+INFO: [Synth 8-4471] merging register 'Character_received_reg' into 'Data_ready_reg' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
+WARNING: [Synth 8-6014] Unused sequential element Character_received_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
+INFO: [Synth 8-256] done synthesizing module 'rx16550' (10#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-638] synthesizing module 'tx16550' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-256] done synthesizing module 'tx16550' (11#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-638] synthesizing module 'tx_fifo_block' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (12#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (13#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (14#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'tx_fifo_block' (15#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_block' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_control' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-226] default block is never used [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_control' (16#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 11 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 11 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (16#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (16#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_block' (17#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-256] done synthesizing module 'uart16550' (18#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
+INFO: [Synth 8-638] synthesizing module 'ipic_if' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
+INFO: [Synth 8-256] done synthesizing module 'ipic_if' (19#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
+INFO: [Synth 8-256] done synthesizing module 'xuart' (20#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
+INFO: [Synth 8-256] done synthesizing module 'axi_uart16550' (21#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4680]
+INFO: [Synth 8-256] done synthesizing module 'PmodGPS_axi_uart16550_0_0' (22#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/synth/PmodGPS_axi_uart16550_0_0.vhd:99]
+WARNING: [Synth 8-350] instance 'axi_uart16550_0' of module 'PmodGPS_axi_uart16550_0_0' requires 35 connections, but only 27 given [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/07df/src/PmodGPS.v:288]
+INFO: [Synth 8-638] synthesizing module 'PmodGPS_pmod_bridge_0_0' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/synth/PmodGPS_pmod_bridge_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'pmod_concat' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:12]
+	Parameter Top_Row_Interface bound to: UART - type: string 
+	Parameter Bottom_Row_Interface bound to: Disabled - type: string 
+WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:84]
+WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:90]
+WARNING: [Synth 8-3848] Net in_bottom_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:94]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:100]
+WARNING: [Synth 8-3848] Net in0_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:104]
+WARNING: [Synth 8-3848] Net in1_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:105]
+WARNING: [Synth 8-3848] Net in3_I in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:107]
+WARNING: [Synth 8-3848] Net out2_O in module/entity pmod_concat does not have driver. [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:139]
+INFO: [Synth 8-256] done synthesizing module 'pmod_concat' (23#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-256] done synthesizing module 'PmodGPS_pmod_bridge_0_0' (24#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/synth/PmodGPS_pmod_bridge_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'PmodGPS' (25#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ipshared/07df/src/PmodGPS.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_PmodGPS_0_0' (26#1) [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/synth/design_1_PmodGPS_0_0.v:56]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in3_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port out2_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in2_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in3_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in2_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in3_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port out1_I
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[5]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[4]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[3]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[2]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[1]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[0]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[7]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[6]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[5]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[4]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[3]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[2]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[1]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[0]
+WARNING: [Synth 8-3331] design tx16550 has unconnected port Lcr[7]
+WARNING: [Synth 8-3331] design rx16550 has unconnected port Lcr[7]
+WARNING: [Synth 8-3331] design rx16550 has unconnected port Lcr[6]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[31]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[30]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[29]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[28]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[27]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[26]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[25]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[24]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[23]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[22]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[21]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[20]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[19]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[18]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[17]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[16]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[15]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[14]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[13]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[12]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[11]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[10]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[9]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[8]
+WARNING: [Synth 8-3331] design xuart has unconnected port Rclk
+WARNING: [Synth 8-3331] design xuart has unconnected port Xin
+WARNING: [Synth 8-3331] design address_decoder__parameterized0 has unconnected port Address_In_Erly[0]
+WARNING: [Synth 8-3331] design address_decoder__parameterized0 has unconnected port Address_In_Erly[1]
+WARNING: [Synth 8-3331] design address_decoder__parameterized0 has unconnected port Address_In_Erly[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 485.652 ; gain = 167.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 485.652 ; gain = 167.906
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/PmodGPS_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/PmodGPS_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/PmodGPS_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/PmodGPS_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/PmodGPS_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/PmodGPS_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/PmodGPS_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/PmodGPS_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/PmodGPS_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/PmodGPS_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0_board.xdc] for cell 'inst'
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0_board.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0_board.xdc:7]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0_board.xdc:8]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0_board.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0_board.xdc:10]
+Finished Parsing XDC File [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_PmodGPS_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_PmodGPS_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  FDR => FDRE: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 808.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 808.734 ; gain = 490.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 808.734 ; gain = 490.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/axi_uart16550_0/U0. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for inst/axi_gpio_0/U0. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/dont_touch.xdc, line 33).
+Applied set_property DONT_TOUCH = true for inst/pmod_bridge_0/inst. (constraint file  C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/dont_touch.xdc, line 41).
+Applied set_property DONT_TOUCH = true for inst/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/axi_uart16550_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/pmod_bridge_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 808.734 ; gain = 490.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element INCLUDE_DPHASE_TIMER.dpto_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2674]
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'receive_state_reg' in module 'rx16550'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'transmit_state_reg' in module 'tx16550'
+INFO: [Synth 8-5544] ROM "tsr_loaded_com" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:753]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[0] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[1] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[2] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[3] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[4] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[5] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[6] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[7] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[8] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[9] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[10] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[11] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[12] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[13] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[14] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[15] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element character_counter_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:190]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[0] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[1] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[2] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[3] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[4] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[5] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[6] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[7] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[8] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[9] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[10] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[11] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[12] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[13] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[14] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+WARNING: [Synth 8-6014] Unused sequential element INFERRED_GEN.data_reg[15] was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:490]
+INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3729]
+WARNING: [Synth 8-6014] Unused sequential element GENERATING_FIFOS.rx_error_in_fifo_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3730]
+INFO: [Synth 8-5544] ROM "iir" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+               start_bit |                             0001 |                             0001
+               data_bit1 |                             0010 |                             0010
+               data_bit2 |                             0011 |                             0011
+               data_bit3 |                             0100 |                             0100
+               data_bit4 |                             0101 |                             0101
+               data_bit5 |                             0110 |                             0110
+               data_bit6 |                             0111 |                             0111
+               data_bit7 |                             1011 |                             1000
+               data_bit8 |                             1100 |                             1001
+              parity_bit |                             1000 |                             1010
+             frame_error |                             1001 |                             1101
+               stop_bit1 |                             1010 |                             1011
+               stop_bit2 |                             1101 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'receive_state_reg' using encoding 'sequential' in module 'rx16550'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+               start_bit |                             0001 |                             0001
+               data_bit1 |                             0010 |                             0010
+               data_bit2 |                             0011 |                             0011
+               data_bit3 |                             0100 |                             0100
+               data_bit4 |                             0101 |                             0101
+               data_bit5 |                             0110 |                             0110
+               data_bit6 |                             0111 |                             0111
+               data_bit7 |                             1000 |                             1000
+               data_bit8 |                             1001 |                             1001
+              parity_bit |                             1010 |                             1010
+               stop_bit1 |                             1011 |                             1011
+               stop_bit2 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'transmit_state_reg' using encoding 'sequential' in module 'tx16550'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 808.734 ; gain = 490.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 15    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 140   
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 13    
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	  32 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	  25 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 63    
+	   4 Input      1 Bit        Muxes := 6     
+	  14 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pselect_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+Module GPIO_Core 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module axi_gpio 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module address_decoder__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module slave_attachment__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module xuart_tx_load_sm 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module rx16550 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	  32 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	  14 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 1     
+Module tx16550 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	  25 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  13 Input      1 Bit        Muxes := 4     
+Module cntr_incr_decr_addn_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module srl_fifo_rbu_f 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module rx_fifo_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module srl_fifo_rbu_f__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module uart16550 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 50    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 12    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module ipic_if 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 11    
+Module axi_uart16550 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+WARNING: [Synth 8-6014] Unused sequential element bus2ip_reset_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+WARNING: [Synth 8-6014] Unused sequential element AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2674]
+INFO: [Synth 8-4471] merging register 'XUART_I_1/UART16550_I_1/wrN_d_reg' into 'XUART_I_1/UART16550_I_1/rdN_d_reg' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2594]
+INFO: [Synth 8-4471] merging register 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' into 'bus2ip_reset_int_core_reg' [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2493]
+WARNING: [Synth 8-6014] Unused sequential element AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2004]
+WARNING: [Synth 8-6014] Unused sequential element AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2493]
+WARNING: [Synth 8-6014] Unused sequential element XUART_I_1/UART16550_I_1/wrN_d_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2594]
+WARNING: [Synth 8-6014] Unused sequential element XUART_I_1/UART16550_I_1/tx16550_1/clkdiv_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:753]
+WARNING: [Synth 8-6014] Unused sequential element XUART_I_1/UART16550_I_1/GENERATING_FIFOS.rx_fifo_block_1/rx_fifo_control_1/character_counter_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:190]
+WARNING: [Synth 8-6014] Unused sequential element XUART_I_1/UART16550_I_1/GENERATING_FIFOS.rx_error_in_fifo_cnt_reg was removed.  [c:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3730]
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[29]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[28]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[27]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[26]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[25]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[24]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[23]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[22]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[21]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[20]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[19]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[18]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[17]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[16]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[15]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[14]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[13]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[12]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[11]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[10]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[9]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[8]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[7]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[6]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[5]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[4]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[3]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[2]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[1]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[2]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[3]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[7]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[6]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[5]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[4]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_uart16550_0/U0/\XUART_I_1/UART16550_I_1/iir_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_uart16550_0/U0/\XUART_I_1/UART16550_I_1/GENERATING_FIFOS.fcr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_uart16550_0/U0/\XUART_I_1/UART16550_I_1/iir_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_uart16550_0/U0/\XUART_I_1/UART16550_I_1/GENERATING_FIFOS.fcr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst/axi_uart16550_0/U0/XUART_I_1/UART16550_I_1/mcr_reg[5]' (FDRE) to 'inst/axi_uart16550_0/U0/XUART_I_1/UART16550_I_1/mcr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_uart16550_0/U0/XUART_I_1/UART16550_I_1/iir_reg[6]' (FD) to 'inst/axi_uart16550_0/U0/XUART_I_1/UART16550_I_1/iir_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_uart16550_0/U0/XUART_I_1/UART16550_I_1/mcr_reg[6]' (FDRE) to 'inst/axi_uart16550_0/U0/XUART_I_1/UART16550_I_1/mcr_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_uart16550_0/U0/\XUART_I_1/UART16550_I_1/mcr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/axi_uart16550_0/U0/\XUART_I_1/UART16550_I_1/rdN_d_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_uart16550_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_uart16550_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/mcr_reg[7]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/iir_reg[5]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/iir_reg[4]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.tx_fifo_block_1/srl_fifo_rbu_f_i1/underflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.tx_fifo_block_1/srl_fifo_rbu_f_i1/overflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.rx_fifo_block_1/srl_fifo_rbu_f_i1/underflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.rx_fifo_block_1/srl_fifo_rbu_f_i1/overflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/rdN_d_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_uart16550.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 808.734 ; gain = 490.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:27 . Memory (MB): peak = 808.734 ; gain = 490.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:29 . Memory (MB): peak = 840.516 ; gain = 522.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_uart16550.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:30 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                  | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[15] | 16     | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[15] | 16     | 11         | 11     | 0       | 0      | 0      | 0      | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     4|
+|2     |LUT1   |    21|
+|3     |LUT2   |    57|
+|4     |LUT3   |    58|
+|5     |LUT4   |    67|
+|6     |LUT5   |    88|
+|7     |LUT6   |   163|
+|8     |MUXF7  |     5|
+|9     |ODDR   |     1|
+|10    |SRL16E |    19|
+|11    |FDR    |     8|
+|12    |FDRE   |   301|
+|13    |FDSE   |    48|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------------+---------------------------------+------+
+|      |Instance                                       |Module                           |Cells |
++------+-----------------------------------------------+---------------------------------+------+
+|1     |top                                            |                                 |   840|
+|2     |  inst                                         |PmodGPS                          |   840|
+|3     |    axi_gpio_0                                 |PmodGPS_axi_gpio_0_0             |   101|
+|4     |      U0                                       |axi_gpio                         |   101|
+|5     |        AXI_LITE_IPIF_I                        |axi_lite_ipif                    |    65|
+|6     |          I_SLAVE_ATTACHMENT                   |slave_attachment                 |    65|
+|7     |            I_DECODER                          |address_decoder                  |    23|
+|8     |        gpio_core_1                            |GPIO_Core                        |    31|
+|9     |          \Not_Dual.INPUT_DOUBLE_REGS3         |cdc_sync                         |     8|
+|10    |    axi_uart16550_0                            |PmodGPS_axi_uart16550_0_0        |   739|
+|11    |      U0                                       |axi_uart16550                    |   739|
+|12    |        AXI_LITE_IPIF_I                        |axi_lite_ipif__parameterized0    |    35|
+|13    |          I_SLAVE_ATTACHMENT                   |slave_attachment__parameterized0 |    35|
+|14    |            I_DECODER                          |address_decoder__parameterized0  |     6|
+|15    |        XUART_I_1                              |xuart                            |   702|
+|16    |          IPIC_IF_I_1                          |ipic_if                          |    15|
+|17    |          UART16550_I_1                        |uart16550                        |   687|
+|18    |            \GENERATING_FIFOS.rx_fifo_block_1  |rx_fifo_block                    |    78|
+|19    |              rx_fifo_control_1                |rx_fifo_control                  |    35|
+|20    |              srl_fifo_rbu_f_i1                |srl_fifo_rbu_f__parameterized0   |    43|
+|21    |                CNTR_INCR_DECR_ADDN_F_I        |cntr_incr_decr_addn_f_0          |    25|
+|22    |                DYNSHREG_F_I                   |dynshreg_f__parameterized0       |    15|
+|23    |            \GENERATING_FIFOS.tx_fifo_block_1  |tx_fifo_block                    |    32|
+|24    |              srl_fifo_rbu_f_i1                |srl_fifo_rbu_f                   |    32|
+|25    |                CNTR_INCR_DECR_ADDN_F_I        |cntr_incr_decr_addn_f            |    14|
+|26    |                DYNSHREG_F_I                   |dynshreg_f                       |    16|
+|27    |            rx16550_1                          |rx16550                          |   181|
+|28    |            tx16550_1                          |tx16550                          |    66|
+|29    |            xuart_tx_load_sm_1                 |xuart_tx_load_sm                 |    20|
+|30    |    pmod_bridge_0                              |PmodGPS_pmod_bridge_0_0          |     0|
+|31    |      inst                                     |pmod_concat                      |     0|
++------+-----------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 176 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 849.543 ; gain = 208.715
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 849.543 ; gain = 531.797
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  FDR => FDRE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+239 Infos, 159 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:37 . Memory (MB): peak = 849.543 ; gain = 541.324
+INFO: [Common 17-1381] The checkpoint 'C:/hdl_projects/arty_s7/arty_s7.runs/design_1_PmodGPS_0_0_synth_1/design_1_PmodGPS_0_0.dcp' has been generated.

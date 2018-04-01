@@ -1,0 +1,175 @@
+16:36:24 **** Incremental Build of project s7_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodALS_v1_0/src"
+make -C microblaze_0/libsrc/PmodALS_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGPS_v1_1/src"
+make -C microblaze_0/libsrc/PmodGPS_v1_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodHYGRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodHYGRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodMTDS_v1_0/src"
+make -C microblaze_0/libsrc/PmodMTDS_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodNAV_v1_0/src"
+make -C microblaze_0/libsrc/PmodNAV_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_4/src"
+make -C microblaze_0/libsrc/standalone_v6_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_4/src"
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/PmodALS_v1_0/src"
+make -C microblaze_0/libsrc/PmodALS_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGPS_v1_1/src"
+make -C microblaze_0/libsrc/PmodGPS_v1_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+PmodGPS_selftest.c: In function 'PMODGPS_Reg_SelfTest':
+PmodGPS_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( PMODGPS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+PmodGPS_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/PmodHYGRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodHYGRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodHYGRO..."
+In file included from xiic.h:311:0,
+                 from PmodHYGRO.h:29,
+                 from PmodHYGRO.c:25:
+PmodHYGRO.c: In function 'HYGRO_IICInit':
+xiic_l.h:300:13: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+  XIic_Out32((BaseAddress) + (RegOffset), (RegisterValue))
+             ^
+xiic_l.h:317:2: note: in expansion of macro 'XIic_WriteReg'
+  XIic_WriteReg((BaseAddress), XIIC_DGIER_OFFSET, 0)
+  ^~~~~~~~~~~~~
+PmodHYGRO.c:174:2: note: in expansion of macro 'XIic_IntrGlobalDisable'
+  XIic_IntrGlobalDisable(IicInstancePtr);
+  ^~~~~~~~~~~~~~~~~~~~~~
+In file included from xiic_l.h:98:0,
+                 from xiic.h:311,
+                 from PmodHYGRO.h:29,
+                 from PmodHYGRO.c:25:
+../../../include/xil_io.h:223:20: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XIic * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+                    ^~~~~~~~~
+PmodHYGRO.c: In function 'StatusHandler':
+PmodHYGRO.c:272:38: warning: unused parameter 'InstancePtr' [-Wunused-parameter]
+ static void StatusHandler(PmodHYGRO *InstancePtr) {
+                                      ^~~~~~~~~~~
+At top level:
+PmodHYGRO.c:272:13: warning: 'StatusHandler' defined but not used [-Wunused-function]
+ static void StatusHandler(PmodHYGRO *InstancePtr) {
+             ^~~~~~~~~~~~~
+xtmrctr_sinit.c: In function 'XTmrCtr_LookupConfig':
+xtmrctr_sinit.c:92:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (Index = 0; Index < XPAR_XTMRCTR_NUM_INSTANCES; Index++) {
+                        ^
+"Running Make libs in microblaze_0/libsrc/PmodMTDS_v1_0/src"
+make -C microblaze_0/libsrc/PmodMTDS_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodMTDS..."
+PmodMTDS.c:28:1: warning: "/*" within comment [-Wcomment]
+ /* for the PmodMTDS (insert name, duh).
+  
+PmodMTDS.c:29:1: warning: "/*" within comment [-Wcomment]
+ /*                  */
+  
+PmodMTDS.c:34:1: warning: "/*" within comment [-Wcomment]
+ /*                  */
+  
+xtmrctr_sinit.c: In function 'XTmrCtr_LookupConfig':
+xtmrctr_sinit.c:92:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (Index = 0; Index < XPAR_XTMRCTR_NUM_INSTANCES; Index++) {
+                        ^
+MtdsCore.cpp: In function 'bool MtdsReadRhdr(uint8_t*)':
+MtdsCore.cpp:332:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (cbCur < sizeof(RHDR)) {
+         ~~~~~~^~~~~~~~~
+MtdsCore.cpp: In function 'bool MtdsReadDhdr(uint8_t*)':
+MtdsCore.cpp:422:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while (cbCur < sizeof(DHDR)) {
+         ~~~~~~^~~~~~~~~
+MtdsFs.cpp: In member function 'bool MTFS::GetCurrentDir(int, char*)':
+MtdsFs.cpp:200:30: warning: unused parameter 'cbMax' [-Wunused-parameter]
+ bool MTFS::GetCurrentDir(int cbMax, char * szDir) {
+                              ^~~~~
+MtdsFs.cpp: In member function 'bool MTFS::SetVolumeLabel(char*)':
+MtdsFs.cpp:244:34: warning: unused parameter 'szVol' [-Wunused-parameter]
+ bool MTFS::SetVolumeLabel(char * szVol) {
+                                  ^~~~~
+MtdsFs.cpp: In member function 'bool MTFS::GetVolumeLabel(int, char*)':
+MtdsFs.cpp:265:31: warning: unused parameter 'cbMax' [-Wunused-parameter]
+ bool MTFS::GetVolumeLabel(int cbMax, char * szVol) {
+                               ^~~~~
+MtdsFs.cpp:265:45: warning: unused parameter 'szVol' [-Wunused-parameter]
+ bool MTFS::GetVolumeLabel(int cbMax, char * szVol) {
+                                             ^~~~~
+MtdsHal.cpp: In function 'void MtdsHalInit(int)':
+MtdsHal.cpp:110:22: warning: unused parameter 'pinSel' [-Wunused-parameter]
+ void MtdsHalInit(int pinSel) {
+                      ^~~~~~
+MtdsHal.cpp: In function 'void MtdsHalEnableStatusPin(int)':
+MtdsHal.cpp:147:33: warning: unused parameter 'idPin' [-Wunused-parameter]
+ void MtdsHalEnableStatusPin(int idPin) {
+                                 ^~~~~
+MtdsHal.cpp: In function 'bool MtdsHalGetStatusPin(int)':
+MtdsHal.cpp:169:30: warning: unused parameter 'idPin' [-Wunused-parameter]
+ bool MtdsHalGetStatusPin(int idPin) {
+                              ^~~~~
+MtdsHal.cpp: In function 'bool MtdsHalResetDisplay(int)':
+MtdsHal.cpp:197:30: warning: unused parameter 'pinSel' [-Wunused-parameter]
+ bool MtdsHalResetDisplay(int pinSel) {
+                              ^~~~~~
+MtdsHal.cpp: In function 'void MtdsHalInitSpi(uint32_t, uint32_t)':
+MtdsHal.cpp:221:30: warning: unused parameter 'pspiInit' [-Wunused-parameter]
+ void MtdsHalInitSpi(uint32_t pspiInit, uint32_t frq) {
+                              ^~~~~~~~
+MtdsHal.cpp:221:49: warning: unused parameter 'frq' [-Wunused-parameter]
+ void MtdsHalInitSpi(uint32_t pspiInit, uint32_t frq) {
+                                                 ^~~
+"Running Make libs in microblaze_0/libsrc/PmodNAV_v1_0/src"
+make -C microblaze_0/libsrc/PmodNAV_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodNAV..."
+PmodNAV.c: In function 'NAV_GetODRRaw':
+PmodNAV.c:2289:11: warning: 'getODR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return getODR;
+           ^~~~~~
+PmodNAV.c: In function 'NAV_GetFIFOMode':
+PmodNAV.c:2616:11: warning: 'getFIFO' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return getFIFO;
+           ^~~~~~~
+PmodNAV.c: In function 'NAV_GetFIFOThs':
+PmodNAV.c:2665:11: warning: 'bFifoThs' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return bFifoThs;
+           ^~~~~~~~
+PmodNAV.c: In function 'NAV_GetFIFOStatus':
+PmodNAV.c:2699:11: warning: 'getFIFOSts' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return getFIFOSts;
+           ^~~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_4/src"
+make -C microblaze_0/libsrc/standalone_v6_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_4/src"
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+16:37:52 Build Finished (took 1m:27s.133ms)
+
