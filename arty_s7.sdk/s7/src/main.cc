@@ -258,95 +258,57 @@ printf("int_start\n\r");
 		mydisp.drawText(c, 115, 170);
 
 	}
+	if (compass_active == true)
+	{
 
+		NAV_GetData(&nav);
+		dps = NavDemo_ScalarProjection(nav.acclData, nav.gyroData);
+		if (dps < -4) // Remove some noise around 0
+		   str = "Clockwise";
+		else if (dps > 4)
+		  str = "Counter-Clockwise";
+		else
+		   str = "Marginal";
+		magXYd = NavDemo_AngleInXY(nav.magData);
+		str = compass[(int)((magXYd + 22.5) / 45.0) % 8];
+		mydisp.setPen(penSolid);
+		compass_setup();
+		void compass();
+		if (strcmp(str,"North")==0) {
 
-
-//	        printf(
-//	           "Accelerometer G values    X:%.2f G, Y:%.2f G, Z:%.2f G\n\r",
-//	           nav.acclData.X,
-//	           nav.acclData.Y,
-//	           nav.acclData.Z
-//	        );
-
-//	        printf(
-//	           "    %.2f degrees from vertical\n\r",
-//	           NavDemo_DegreesFromVertical(nav.acclData)
-//	        );
-	        // Format and serial print the data read from accelerometer instrument,
-	        // stored in acclData variables and expressed in G
-
-//	        printf(
-//	           "Gyro dps values   X:%.2f dps, Y:%.2f dps, Z:%.2f dps\n\r",
-//	           nav.gyroData.X,
-//	           nav.gyroData.Y,
-//	           nav.acclData.Z
-//	        );
-
-//	        printf("    rotating about vertical at %6.2f dps (%s)\n\r", dps, str);
-	        // Format and serial print the data read from Gyro instrument, stored in
-	        // gyroData variables and expressed in degrees per second
-
-//	        printf(
-//	           "Magnetometer Gauss values   X:%.2f Gauss, Y:%.2f Gauss, Z:%.2f Gauss \
-//	                  \n\r",
-//	           nav.magData.X,
-//	           nav.magData.Y,
-//	           nav.magData.Z
-//	        );
-	        // Format and serial print the data read from magnetometer instrument,
-	        // stored in magData variables and expressed in Gauss
-
-	        if (compass_active == true)
-	        {
-
-	            NAV_GetData(&nav);
-	            dps = NavDemo_ScalarProjection(nav.acclData, nav.gyroData);
-				if (dps < -4) // Remove some noise around 0
-				   str = "Clockwise";
-				else if (dps > 4)
-				  str = "Counter-Clockwise";
-				else
-				   str = "Marginal";
-		        magXYd = NavDemo_AngleInXY(nav.magData);
-		        str = compass[(int)((magXYd + 22.5) / 45.0) % 8];
-	        	mydisp.setPen(penSolid);
-	        	compass_setup();
-	        	void compass();
-	        	if (strcmp(str,"North")==0) {
-
-	        	      mydisp.setForeground(clrGreen);
-	        	      mydisp.drawLine(120, 180, 120, 140);
-	        	}
-	        	else if (strcmp(str,"South")==0){
-	        	      mydisp.setForeground(clrRed);
-	        	      mydisp.drawLine(120, 180, 120, 220);
-	        	}
-	        	else if (strcmp(str,"East")==0) {
-	        	      mydisp.setForeground(clrGreen);
-	        	      mydisp.drawLine(120, 180, 230, 180);
-	        	}
-	        	else if (strcmp(str,"West")==0) {
-	        	      mydisp.setForeground(clrRed);
-	        	      mydisp.drawLine(120, 180, 20, 180);
-	        	}
-	        	else if (strcmp(str,"North-East")==0){
-	        	      mydisp.setForeground(clrGreen);
-	        	      mydisp.drawLine(120, 180, 220, 120);
-	        	}
-	        	else if (strcmp(str,"South-East")==0){
-	        	      mydisp.setForeground(clrGreen);
-	        	      mydisp.drawLine(120, 180, 220, 230);
-	        	}
-	        	else if (strcmp(str,"South-West")==0) {
-	        	      mydisp.setForeground(clrRed);
-	        	      mydisp.drawLine(120, 180, 20, 220);
-	        	}
-	        	else if (strcmp(str,"North-West")==0) {
-	        	      mydisp.setForeground(clrRed);
-	        	      mydisp.drawLine(120, 180, 20, 120);
-	        	}
-	        }
-	        printf("int_end\n\r");
+			  mydisp.setForeground(clrGreen);
+			  mydisp.drawLine(120, 180, 120, 140);
+		}
+		else if (strcmp(str,"South")==0){
+			  mydisp.setForeground(clrRed);
+			  mydisp.drawLine(120, 180, 120, 220);
+		}
+		else if (strcmp(str,"East")==0) {
+			  mydisp.setForeground(clrGreen);
+			  mydisp.drawLine(120, 180, 230, 180);
+		}
+		else if (strcmp(str,"West")==0) {
+			  mydisp.setForeground(clrRed);
+			  mydisp.drawLine(120, 180, 20, 180);
+		}
+		else if (strcmp(str,"North-East")==0){
+			  mydisp.setForeground(clrGreen);
+			  mydisp.drawLine(120, 180, 220, 120);
+		}
+		else if (strcmp(str,"South-East")==0){
+			  mydisp.setForeground(clrGreen);
+			  mydisp.drawLine(120, 180, 220, 230);
+		}
+		else if (strcmp(str,"South-West")==0) {
+			  mydisp.setForeground(clrRed);
+			  mydisp.drawLine(120, 180, 20, 220);
+		}
+		else if (strcmp(str,"North-West")==0) {
+			  mydisp.setForeground(clrRed);
+			  mydisp.drawLine(120, 180, 20, 120);
+		}
+	}
+	printf("int_end\n\r");
 }
 
 int SetupInterruptSystem()

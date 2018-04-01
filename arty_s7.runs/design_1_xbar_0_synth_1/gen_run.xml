@@ -10,6 +10,8 @@
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci"/>
+        <Attr Name="ImportTime" Val="1522487640"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -25,6 +27,8 @@
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci"/>
+        <Attr Name="ImportTime" Val="1522487640"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Apr  1 12:13:59 2018
+# Process ID: 17988
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7256
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hdl_projects/arty_s7/arty_s7.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {5 1948 56} [get_bd_cells microblaze_0]
+set_property location {5 1943 502} [get_bd_cells PmodMTDS_0]
+set_property location {5 1974 663} [get_bd_cells PmodGPS_0]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+save_bd_design
+archive_project C:/hdl_projects/arty_s7.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17988-DESKTOP-HQKVQ13 -force -include_local_ip_cache

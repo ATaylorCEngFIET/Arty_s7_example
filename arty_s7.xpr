@@ -3,17 +3,17 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="32" Path="C:/hdl_projects/arty_s7/arty_s7.xpr">
+<Project Version="7" Minor="32" Path="C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17988-DESKTOP-HQKVQ13/PrjAr/_X_/arty_s7.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="c8306198b05f4b07bb06721812f6b351"/>
+    <Option Name="Id" Val="77b0cecbd1ec420b8cbf1566ed5b7f27"/>
     <Option Name="Part" Val="xc7s50csga324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
     <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../../../hdl_projects/arty_s7/arty_s7.cache/compile_simlib/xcelium"/>
     <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
@@ -21,8 +21,7 @@
     <Option Name="BoardPart" Val="digilentinc.com:arty-s7-50:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../vivado-library-master"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/arty_s7.ipdefs/vivado-library-master_0"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -59,36 +58,17 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/design_1.bd"/>
+          <Attr Name="ImportTime" Val="1522572482"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_mdm_1_0/design_1_mdm_1_0.xci">
-          <Proxy FileSetName="design_1_mdm_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xci">
-          <Proxy FileSetName="design_1_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xci">
-          <Proxy FileSetName="design_1_microblaze_0_axi_intc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_xbar_0/design_1_xbar_0.xci">
-          <Proxy FileSetName="design_1_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xci">
-          <Proxy FileSetName="design_1_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.xci">
-          <Proxy FileSetName="design_1_rst_mig_7series_0_81M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0.xci">
-          <Proxy FileSetName="design_1_microblaze_0_xlconcat_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="design_1_dlmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci">
           <Proxy FileSetName="design_1_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0.xci">
+          <Proxy FileSetName="design_1_mig_7series_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xci">
           <Proxy FileSetName="design_1_microblaze_0_0"/>
@@ -96,61 +76,81 @@
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_smc_0/design_1_axi_smc_0.xci">
           <Proxy FileSetName="design_1_axi_smc_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0.xci">
-          <Proxy FileSetName="design_1_mig_7series_0_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.xci">
+          <Proxy FileSetName="design_1_rst_mig_7series_0_81M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="design_1_ilmb_bram_if_cntlr_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xci">
+          <Proxy FileSetName="design_1_dlmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="design_1_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_PmodMTDS_0_0/design_1_PmodMTDS_0_0.xci">
           <Proxy FileSetName="design_1_PmodMTDS_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xci">
-          <Proxy FileSetName="design_1_axi_timer_0_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0.xci">
+          <Proxy FileSetName="design_1_PmodGPS_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0.xci">
+          <Proxy FileSetName="design_1_microblaze_0_xlconcat_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci">
           <Proxy FileSetName="design_1_xlconstant_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="design_1_axi_uartlite_0_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_lmb_bram_0/design_1_lmb_bram_0.xci">
+          <Proxy FileSetName="design_1_lmb_bram_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_PmodHYGRO_0_0/design_1_PmodHYGRO_0_0.xci">
           <Proxy FileSetName="design_1_PmodHYGRO_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_PmodGPS_0_0/design_1_PmodGPS_0_0.xci">
-          <Proxy FileSetName="design_1_PmodGPS_0_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="design_1_ilmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_lmb_bram_0/design_1_lmb_bram_0.xci">
-          <Proxy FileSetName="design_1_lmb_bram_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xci">
+          <Proxy FileSetName="design_1_ilmb_v10_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_PmodALS_0_0/design_1_PmodALS_0_0.xci">
-          <Proxy FileSetName="design_1_PmodALS_0_0"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_xbar_0/design_1_xbar_0.xci">
+          <Proxy FileSetName="design_1_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="design_1_microblaze_0_axi_intc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_mdm_1_0/design_1_mdm_1_0.xci">
+          <Proxy FileSetName="design_1_mdm_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_PmodNAV_0_0/design_1_PmodNAV_0_0.xci">
           <Proxy FileSetName="design_1_PmodNAV_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="design_1_axi_uartlite_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_PmodALS_0_0/design_1_PmodALS_0_0.xci">
+          <Proxy FileSetName="design_1_PmodALS_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ila_0_0/design_1_ila_0_0.xci">
           <Proxy FileSetName="design_1_ila_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xci">
+          <Proxy FileSetName="design_1_axi_timer_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd"/>
+          <Attr Name="ImportTime" Val="1522487703"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/mig_a.prj">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="ScopedToCell" Val="design_1_mig_7series_0_0"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/mig_b.prj">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../hdl_projects/arty_s7/arty_s7.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/mig_b.prj"/>
+          <Attr Name="ImportTime" Val="1522346004"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="ScopedToCell" Val="design_1_mig_7series_0_0"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/archive_project_summary.txt"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="design_1_wrapper"/>
@@ -161,6 +161,8 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/const.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../hdl_projects/arty_s7/arty_s7.srcs/constrs_1/new/const.xdc"/>
+          <Attr Name="ImportTime" Val="1522401646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -732,9 +734,7 @@
     </Run>
     <Run Id="design_1_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_ila_0_0" Part="xc7s50csga324-1" ConstrsSet="design_1_ila_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_ila_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -3144,9 +3144,7 @@
     </Run>
     <Run Id="design_1_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="design_1_ila_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="design_1_ila_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
